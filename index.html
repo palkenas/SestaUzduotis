@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script>
+            // pirma užduotis
+        let name = "Paulius ";
+        let lastname = "Ignatavičius"
+        let birth = 1984;
+        let year = 2022;
+        console.log("Aš esu "+name+lastname,". Man yra "+(year-birth),"metai(ų).");
+        
+        // antra užduotis
+        let number1 = Math.random()*4;
+        let number2 = Math.random()*4;
+        if(number1 !== 0 && number2 !== 0){
+            if(number1 > number2) {
+                console.log(Math.round(number1 * 100) / 100) / (Math.round(number2 * 100) / 100)
+            }
+            else {
+                console.log(Math.round(number2 * 100) / 100) / (Math.round(number1 * 100) / 100)
+            }
+        }else{
+            console.log("Dalyba is nulio negalima");
+        }
+        
+        // trečia užduotis
+        let number3 = Math.round(Math.random()*25);
+        let number4 = Math.round(Math.random()*25);
+        let number5 = Math.round(Math.random()*25);
+        if (
+            (number3 >= number4 && number4 >=number5) ||
+            (number3 <= number4 && number4 <=number5)
+        ) {
+            console.log(number4);
+        } 
+          
+        if (
+            (number5 >= number4 && number5 <=number3) ||
+            (number5 <= number4 && number5 >=number3)
+        ) {
+            console.log(number5);
+        } 
+        
+        if (
+            (number3 >= number4 && number3 <=number5) ||
+            (number3 <= number4 && number3 >=number5)
+        ) {
+            console.log(number3);
+        } 
+
+        // ketvirta užduotis
+
+        let a = Math.round(Math.random()*10)
+        let b = Math.round(Math.random()*10)
+        let c = Math.round(Math.random()*10)
+
+        if (((a+b)>c)&&((a+c)>b)&&((b+c)>a)) {
+            console.log("Trikampis galimas")
+        }
+        else {
+            console.log("Trikampis negalimas")
+        }
+
+        // penkta užduotis
+
+        let d = Math.round(Math.random()*2)
+        let e = Math.round(Math.random()*2)
+        let f = Math.round(Math.random()*2)
+        let g = Math.round(Math.random()*2)
+
+        console.log(g)
+
+
+
+
+          
+        
+    </script>
+    </body>
